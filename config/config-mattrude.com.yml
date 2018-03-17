@@ -1,0 +1,78 @@
+# Site settings
+title: mattrude.com Communication Service
+email: matt@mattrude.com
+description: ""
+url: "https://im.mattrude.com"
+name: "mattrude.com"
+baseurl: "im.mattrude.com"
+destination: "/var/www/im.mattrude.com"
+prosody-version: "0.10"
+
+owner_name: "Matt Rude"
+owner_pgpkey: "0xc4909ee495b0761f"
+
+xmpp-url: "mattrude.com" # The XMPP domain url
+xmpp-host: "im.mattrude.com" # The hostname of the server
+xmpp-conference-url: "conference.mattrude.com" # Multi-User Chat xep-0045
+xmpp-proxy-url: "proxy.mattrude.com" # XEP-0065: SOCKS5 Bytestreams (Proxy)
+xmpp-upload-url: "upload.mattrude.com" # XEP-0065: SOCKS5 Bytestreams (Proxy)
+
+xep-0160: 0 # Best Practices for Handling Offline Messages
+xep-0163: 1 # Personal Eventing Protocal
+xep-0237: 1 # Roster Versioning
+xep-0280: 1 # Message Carbons
+xep-0191: 1 # Blocking Command
+xep-0045: 1 # Multi-User Chat
+xep-0198: 1 # Stream Management
+xep-0313: 1 # Message Archive Management
+xep-0352: 1 # Client State Indication
+xep-0363: 1 # HTTP File Upload
+xep-0065: 1 # SOCKS 5 Bytestreams (Proxy)
+xep-0357: 1 # Push Notifications
+xep-0375: 0 # XMPP protocol compliance levels for 2016
+
+fingerprints: 1
+fingerprint-expires: "May 21 00:00:56 2018 GMT"
+fingerprint-im-expires: "May 13 01:33:01 2018 GMT"
+fingerprint-conference-expires: "May 13 01:33:01 2018 GMT"
+fingerprint-proxy-expires: "May 13 01:33:01 2018 GMT"
+fingerprint-upload-expires: "May 13 01:33:01 2018 GMT"
+fingerprint-sha1: "C5:76:C2:46:F5:36:75:9D:3C:55:68:F2:A1:82:29:26:2A:17:48:5E"
+fingerprint-sha256: "31:5D:BE:0F:D1:F0:9B:02:48:67:E5:41:E1:8E:7F:A9:02:6E:8D:ED:F2:9E:CB:4D:9F:29:61:C4:50:C7:7F:AE"
+fingerprint-im-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
+fingerprint-im-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
+fingerprint-conference-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
+fingerprint-conference-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
+fingerprint-proxy-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
+fingerprint-proxy-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
+fingerprint-upload-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
+fingerprint-upload-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
+
+# Analytics settings
+#google_analytics_id: UA-9532791-9
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+date: YYYY-MM-DD HH:MM
+
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+- css/syntax.less
+- css/site.less
+- css/small.less
+
+plugins:
+- jekyll-sitemap
+#- jekyll-press
+
+jekyll-press:
+  exclude: 'robots.txt, contact.txt, contact-ecc.txt' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  js_options: {}      # js minifier options
+  css_options: {}     # css minifier options
+  html_options: {}    # html minifier options

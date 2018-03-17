@@ -1,0 +1,9 @@
+[submodule "sites/main"]
+	path = sites/main
+	url = git@git.mattrude.com:xmpp-site.git
+[submodule "sites/lite"]
+	path = sites/lite
+	url = git@github.com:mattrude/xmpp-site-lite.git
+[submodule "sites/placeholder"]
+	path = sites/placeholder
+	url = git@github.com:mattrude/xmpp-site-placeholder.git
