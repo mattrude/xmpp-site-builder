@@ -6,10 +6,19 @@ url: "https://im.mattrude.com"
 name: "mattrude.com"
 baseurl: "im.mattrude.com"
 destination: "/var/www/im.mattrude.com"
-prosody-version: "0.10"
+ejabberd-version: "18.06.92"
+ejabberd-gitversion: "c9ba0e83d28866f3b2cd47291b3e403e3ad2eadc"
+prosody-version: ""
+user-guide: 0
+server-features: 1
 
-owner_name: "Matt Rude"
-owner_pgpkey: "0xc4909ee495b0761f"
+owner-name: "Matt Rude"
+owner-pgpkey: "0xc4909ee495b0761f"
+owner-url: "https://mattrude.com/"
+owner-xmpp: "matt@mattrude.com"
+#owner-email: "matt@mattrude.com"
+owner-twitter: "mdrude"
+owner-github: "mattrude"
 
 xmpp-url: "mattrude.com" # The XMPP domain url
 xmpp-host: "im.mattrude.com" # The hostname of the server
@@ -32,21 +41,21 @@ xep-0357: 1 # Push Notifications
 xep-0375: 0 # XMPP protocol compliance levels for 2016
 
 fingerprints: 1
-fingerprint-expires: "May 21 00:00:56 2018 GMT"
-fingerprint-im-expires: "May 13 01:33:01 2018 GMT"
-fingerprint-conference-expires: "May 13 01:33:01 2018 GMT"
-fingerprint-proxy-expires: "May 13 01:33:01 2018 GMT"
-fingerprint-upload-expires: "May 13 01:33:01 2018 GMT"
-fingerprint-sha1: "C5:76:C2:46:F5:36:75:9D:3C:55:68:F2:A1:82:29:26:2A:17:48:5E"
-fingerprint-sha256: "31:5D:BE:0F:D1:F0:9B:02:48:67:E5:41:E1:8E:7F:A9:02:6E:8D:ED:F2:9E:CB:4D:9F:29:61:C4:50:C7:7F:AE"
-fingerprint-im-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
-fingerprint-im-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
-fingerprint-conference-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
-fingerprint-conference-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
-fingerprint-proxy-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
-fingerprint-proxy-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
-fingerprint-upload-sha1: "82:B4:22:CE:2B:E1:63:EF:3D:1F:B5:76:D9:B7:AD:7E:2E:7B:23:6B"
-fingerprint-upload-sha256: "97:6E:0D:9A:E2:3A:AA:DB:D4:2F:1F:7B:24:4D:A6:D8:C3:4B:01:29:FC:82:11:B3:ED:7F:41:D9:5E:50:2C:44"
+fingerprint-expires: "Sep 18 00:00:15 2018 GMT"
+fingerprint-im-expires: "Sep 19 06:42:39 2018 GMT"
+fingerprint-conference-expires: "Sep 19 06:42:39 2018 GMT"
+fingerprint-proxy-expires: "Sep 19 06:42:39 2018 GMT"
+fingerprint-upload-expires: "Sep 19 06:42:39 2018 GMT"
+fingerprint-sha1: "15:F5:30:A6:C5:B5:BE:A6:50:82:45:25:5B:0F:01:F7:74:DF:5D:86"
+fingerprint-sha256: "78:E0:EA:9F:77:F8:5F:77:79:F5:8A:DA:95:F3:EF:B2:50:FE:63:8D:5A:A2:73:E1:2C:1E:F3:E3:F1:40:AE:78"
+fingerprint-im-sha1: "73:13:23:6F:F7:C9:E2:BD:7C:49:7C:A0:7E:50:FF:67:57:6B:EC:1B"
+fingerprint-im-sha256: "0D:1D:06:6F:C1:2B:58:BB:FA:F7:DF:25:3E:CD:78:81:65:38:79:12:ED:E3:CF:CE:FD:E2:CF:A1:1C:C4:61:7D"
+fingerprint-conference-sha1: "73:13:23:6F:F7:C9:E2:BD:7C:49:7C:A0:7E:50:FF:67:57:6B:EC:1B"
+fingerprint-conference-sha256: "0D:1D:06:6F:C1:2B:58:BB:FA:F7:DF:25:3E:CD:78:81:65:38:79:12:ED:E3:CF:CE:FD:E2:CF:A1:1C:C4:61:7D"
+fingerprint-proxy-sha1: "73:13:23:6F:F7:C9:E2:BD:7C:49:7C:A0:7E:50:FF:67:57:6B:EC:1B"
+fingerprint-proxy-sha256: "0D:1D:06:6F:C1:2B:58:BB:FA:F7:DF:25:3E:CD:78:81:65:38:79:12:ED:E3:CF:CE:FD:E2:CF:A1:1C:C4:61:7D"
+fingerprint-upload-sha1: "73:13:23:6F:F7:C9:E2:BD:7C:49:7C:A0:7E:50:FF:67:57:6B:EC:1B"
+fingerprint-upload-sha256: "0D:1D:06:6F:C1:2B:58:BB:FA:F7:DF:25:3E:CD:78:81:65:38:79:12:ED:E3:CF:CE:FD:E2:CF:A1:1C:C4:61:7D"
 
 # Analytics settings
 #google_analytics_id: UA-9532791-9

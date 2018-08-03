@@ -136,13 +136,13 @@ do
             SHA256UPLOAD=`openssl x509 -noout -fingerprint -sha256 -inform pem -in /etc/letsencrypt/live/$DOMAINFL/fullchain.pem |sed 's/SHA256 Fingerprint=/fingerprint-upload-sha256: "/g' |sed 's/$/"/g'`
         else
             if [ -f /etc/ejabberd/certs/im.${DOMAIN}/fullchain.pem ]; then
-                UPLOADEXPIRES=`openssl x509 -noout -text -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |grep "Not After : " |sed 's/            Not After : /fingerprint-conference-expires: "/g' |sed 's/$/"/g'`
-                SHA1UPLOAD=`openssl x509 -noout -fingerprint -sha1 -inform pem -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |sed 's/SHA1 Fingerprint=/fingerprint-conference-sha1: "/g' |sed 's/$/"/g'`
-                SHA256UPLOAD=`openssl x509 -noout -fingerprint -sha256 -inform pem -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |sed 's/SHA256 Fingerprint=/fingerprint-conference-sha256: "/g' |sed 's/$/"/g'`
+                UPLOADEXPIRES=`openssl x509 -noout -text -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |grep "Not After : " |sed 's/            Not After : /fingerprint-upload-expires: "/g' |sed 's/$/"/g'`
+                SHA1UPLOAD=`openssl x509 -noout -fingerprint -sha1 -inform pem -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |sed 's/SHA1 Fingerprint=/fingerprint-upload-sha1: "/g' |sed 's/$/"/g'`
+                SHA256UPLOAD=`openssl x509 -noout -fingerprint -sha256 -inform pem -in /etc/ejabberd/certs/im.$DOMAIN/fullchain.pem |sed 's/SHA256 Fingerprint=/fingerprint-upload-sha256: "/g' |sed 's/$/"/g'`
             else
-                UPLOADEXPIRES='fingerprint-conference-expires: "No Key Found"'
-                SHA1UPLOAD='fingerprint-conference-sha1: "No Key Found"'
-                SHA256UPLOAD='fingerprint-conference-sha256: "No Key Found"'
+                UPLOADEXPIRES='fingerprint-upload-expires: "No Key Found"'
+                SHA1UPLOAD='fingerprint-upload-sha1: "No Key Found"'
+                SHA256UPLOAD='fingerprint-upload-sha256: "No Key Found"'
             fi
         fi
     fi
